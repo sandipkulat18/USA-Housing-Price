@@ -61,27 +61,27 @@ In our analysis, we identified several key features and their correlations with 
 
 | Feature                | Correlation with Home Price Index |
 |------------------------|-----------------------------|
-| target                  1.000000
-MSPUS                   0.977394
-PPI_Cement              0.959996
-GDP                     0.956264
-income                  0.949967
-PPI_Concrete            0.936382
-POP                     0.894797
-total_emp_cons          0.787229
-new_private_hw_under    0.694883
-all_Const_Emp           0.587502
-monthly_supply          0.242584
-permit                  0.164303
-RHORUSQ156N             0.098989
-house_st                0.048265
-new_private_house       0.003747
-p_saving_rate          -0.245506
-IPI_Cement             -0.265593
-unemployed_rate        -0.265985
-emratio                -0.534276
-mortgage_rate          -0.691159
-labor_percent          -0.798548                |
+| target                 |  1.000000                     |
+|MSPUS                   |  0.977394                     |
+|PPI_Cement              |  0.959996                     |
+|GDP                     |  0.956264                     |
+|income                  |  0.949967                     |
+|PPI_Concrete            |  0.936382                     |
+|POP                     |  0.894797                     | 
+|total_emp_cons          |  0.787229                     |
+|new_private_hw_under    |  0.694883                     |
+|all_Const_Emp           |  0.587502                     | 
+|monthly_supply          |  0.242584                     |
+|permit                  |  0.164303                     |
+|RHORUSQ156N             |  0.098989                     |
+|house_st                |  0.048265                     |
+|new_private_house       |  0.003747                     |
+|p_saving_rate           | -0.245506                    |
+|IPI_Cement              |  -0.265593                    |
+|unemployed_rate         |  -0.265985                    |
+|emratio                 | -0.534276                    |
+|mortgage_rate           |  -0.691159                   |
+|labor_percent           |   -0.798548                |
 
 The positive correlation values indicate a direct relationship with home prices, while negative values suggest an inverse relationship. Features with higher absolute correlation values have a larger impact on home prices.
 
@@ -91,7 +91,7 @@ In this project, we employed the **Lasso regression** model due to indications o
 
 To optimize the Lasso model's performance and select the best regularization hyperparameter (alpha), we utilized **cross-validation**.
 
-- Optimal alpha: **0.0576**.
+- Optimal alpha: **0.0034**.
 
 The cross-validation process resulted in the following **R-squared** scores for different folds:
 - Fold 1: 0.99511795
@@ -105,8 +105,8 @@ The cross-validation process resulted in the following **R-squared** scores for 
 
 
 
-- **mean R-squared** : **0.9937**
-- **standard deviation R squared** : **0.0009**
+- **mean R-squared** : **0.9957**
+- **standard deviation R squared** : **0.0004**
 
 ## Best Features With non-zero Coefficients
 
