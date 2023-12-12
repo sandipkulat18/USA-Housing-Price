@@ -5,9 +5,9 @@ journey to understand the key factors influencing home prices in the United Stat
 By leveraging publicly available data and advanced data science techniques, our goal is to build a comprehensive
 model that sheds light on the intricate relationship between various factors and home prices.
 
-- [🔗 Data Cleaning](https://github.com/Npps1997/USA-HOUSING--Data-Science-Model/blob/main/Data_Cleaning_LLC.ipynb): Details on data cleaning and preprocessing.
-- [🔗 EDA_and_Feature_Engineering](https://github.com/Npps1997/USA-HOUSING--Data-Science-Model/blob/main/EDA_LLC.ipynb): Information about data relations and distributions.
-- [🔗 Model_Training](https://github.com/Npps1997/USA-HOUSING--Data-Science-Model/blob/main/model_training_LLC.ipynb): Model Training and Evaluation of features.
+- [🔗 Data Cleaning](https://github.com/sandipkulat18/USA-Housing-Price/blob/main/Data%20Cleaning%20.ipynb): Details on data cleaning and preprocessing.
+- [🔗 EDA_and_Feature_Engineering& model](https://github.com/sandipkulat18/USA-Housing-Price/blob/main/EDA%20analysis%20%26%20model_training.ipynb): Information about data relations and distributions.
+
 
 Feel free to explore each section for a deeper understanding of the project.
 
