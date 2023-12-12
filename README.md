@@ -6,7 +6,7 @@ By leveraging publicly available data and advanced data science techniques, our 
 model that sheds light on the intricate relationship between various factors and home prices.
 
 - [🔗 Data Cleaning](https://github.com/sandipkulat18/USA-Housing-Price/blob/main/Data%20Cleaning%20.ipynb): Details on data cleaning and preprocessing.
-- [🔗 EDA_and_Feature_Engineering& model](https://github.com/sandipkulat18/USA-Housing-Price/blob/main/EDA%20analysis%20%26%20model_training.ipynb): Information about data relations and distributions.
+- [🔗 EDA_and_Feature_Engineering& model training ](https://github.com/sandipkulat18/USA-Housing-Price/blob/main/EDA%20analysis%20%26%20model_training.ipynb): Information about data relations and distributions.
 
 
 Feel free to explore each section for a deeper understanding of the project.
@@ -139,7 +139,7 @@ These coefficients represent the impact of each feature on the prediction of hom
 
 ## Features with zero Coefficient
 
-In our analysis, some features in our Lasso regression model had coefficients of 0.0, indicating that they do not significantly impact the prediction of home prices. Here are the features with coefficients of 0.0:
+<u>In our analysis, some features in our Lasso regression model had coefficients of 0.0, indicating that they do not significantly impact the prediction of home prices. Here are the features with coefficients of 0.0</u>
 
 |
 These features do not have a significant impact on the prediction of home prices in our model.
