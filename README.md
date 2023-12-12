@@ -61,26 +61,27 @@ In our analysis, we identified several key features and their correlations with 
 
 | Feature                | Correlation with Home Price Index |
 |------------------------|-----------------------------|
-| MSPUS                  | 0.980144                    |
-| PPI_Cement             | 0.964074                    |
-| GDP                    | 0.960633                    |
-| income                 | 0.955608                    |
-| PPI_Concrete           | 0.939072                    |
-| population             | 0.896974                    |
-| total_emp_cons         | 0.812130                    |
-| new_private_hw_under   | 0.634935                    |
-| all_Const_Emp          | 0.560479                    |
-| home_ow_rate           | 0.207294                    |
-| monthly_supply         | 0.169504                    |
-| permit                 | 0.127189                    |
-| house_st               | -0.001742                   |
-| new_private_house      | -0.068468                   |
-| unemployed_rate        | -0.249211                   |
-| IPI_Cement             | -0.260807                   |
-| p_saving_rate          | -0.286001                   |
-| emratio                | -0.538776                   |
-| mortgage_rate          | -0.730709                   |
-| labor_percent          | -0.788313                   |
+| target                  1.000000
+MSPUS                   0.977394
+PPI_Cement              0.959996
+GDP                     0.956264
+income                  0.949967
+PPI_Concrete            0.936382
+POP                     0.894797
+total_emp_cons          0.787229
+new_private_hw_under    0.694883
+all_Const_Emp           0.587502
+monthly_supply          0.242584
+permit                  0.164303
+RHORUSQ156N             0.098989
+house_st                0.048265
+new_private_house       0.003747
+p_saving_rate          -0.245506
+IPI_Cement             -0.265593
+unemployed_rate        -0.265985
+emratio                -0.534276
+mortgage_rate          -0.691159
+labor_percent          -0.798548                |
 
 The positive correlation values indicate a direct relationship with home prices, while negative values suggest an inverse relationship. Features with higher absolute correlation values have a larger impact on home prices.
 
@@ -93,13 +94,15 @@ To optimize the Lasso model's performance and select the best regularization hyp
 - Optimal alpha: **0.0576**.
 
 The cross-validation process resulted in the following **R-squared** scores for different folds:
-- Fold 1: 0.9952
-- Fold 2: 0.9939
-- Fold 3: 0.9933
-- Fold 4: 0.9926
-- Fold 5: 0.9932
+- Fold 1: 0.99511795
+- Fold 2: 0.99630965
+- Fold 3: 0.99531138
+- Fold 4: 0.9958725
+- Fold 5: 0.99598556
 
-![image](https://github.com/Npps1997/USA-HOUSING--Data-Science-Model/assets/96871890/9d8ecd9b-c3a5-40d9-86a4-e230de4783ab)
+
+![image](https://github.com/sandipkulat18/USA-Housing-Price/assets/110375266/9f7ec29c-32ea-4dfd-8c42-255f188dfd9d)
+
 
 
 - **mean R-squared** : **0.9937**
@@ -111,18 +114,26 @@ Here are the features and their respective coefficients obtained from our Lasso 
 
 | Feature                | Coefficient  |
 |------------------------|--------------|
-| p_saving_rate          | -0.923351    |
-| IPI_Cement             | 0.196152     |
-| PPI_Concrete           | 16.893031    |
-| population             | -8.945503    |
-| new_private_hw_under   | 4.770749     |
-| GDP                    | 18.499826    |
-| house_st               | 2.103615     |
-| labor_percent          | 1.501053     |
-| all_Const_Emp          | 10.887265    |
-| monthly_supply         | 3.212566     |
-| unemployed_rate        | 7.251776     |
-| MSPUS                  | 26.852562    |
+|	all_Const_Emp	         | 14.815677    |
+|	emratio	               |-24.005148    |
+|	GDP	                   | 50.950283    |
+|	RHORUSQ156N	           |  1.215961    |
+| house_st	             |  -0.018994   |
+|	income	               | -0.561788    |
+|	IPI_Cement	           |   0.448277   |
+|	labor_percent	         | 16.225860    |
+|	monthly_supply	       | 4.142858     |
+|	mortgage_rate	         | -4.772977    |
+|	MSPUS	                 | 11.390086    |
+|	new_private_house	     |  1.573229    |
+|	new_private_hw_under	 | 7.037809     |
+|	permit                 | 	0.266061    |
+|   POP	                 | -25.808734   |
+|	PPI_Cement	           |  1.301735    |  
+|	PPI_Concrete	         | 4.707908     |
+|	p_saving_rate	         | -2.458522    | 
+|	total_emp_cons	       | -4.485266    | 
+|	unemployed_rate	       |  -3.987282   |
 
 These coefficients represent the impact of each feature on the prediction of home prices. Positive coefficients indicate a direct relationship with home prices, while negative coefficients suggest an inverse relationship.
 
@@ -130,17 +141,7 @@ These coefficients represent the impact of each feature on the prediction of hom
 
 In our analysis, some features in our Lasso regression model had coefficients of 0.0, indicating that they do not significantly impact the prediction of home prices. Here are the features with coefficients of 0.0:
 
-| Feature               | Coefficient  |
-|-----------------------|--------------|
-| mortgage_rate         | 0.0          |
-| PPI_Cement            | 0.0          |
-| permit                | 0.0          |
-| new_private_house     | 0.0          |
-| emratio               | 0.0          |
-| income                | 0.0          |
-| home_ow_rate          | 0.0          |
-| total_emp_cons        | 0.0          |
-
+|
 These features do not have a significant impact on the prediction of home prices in our model.
 
 ## Sources
